@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="EPS, PSD, AEP, APP, Edicion, Diseño, Gráfico, Animaciones">
+    <meta name="description" content="Mantis Producciones ofrece servicios de Ediciones, Diseño Gráfico y Animaciones">
+    <title>Servicios de Edición, Diseño Gráfico y Animaciones - Mantis Producciones</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    
+</head>
+<body>
+<!--Nav-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div >
+            <img src="images/logo.png" width="150" height="50" class="d-inline-block align-top" id="logo" alt="logo">
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-normal" href="index.html"><strong>Servicios</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-normal" href="pages/contacto.html"><strong>Contacto</strong></a>
+                </li>
+          </ul>
+        </div>
+    </nav>
+</header>
+<!--Main-->
+    <main id="general" class="container-fluid pageServicios bg-dark">
+        <div class="row">
+            <div class="col-12 justify-content-center d-inline-flex align-items-center mb-4">
+                <h1 class="text-light d-block">NUESTROS SERVICIOS</h1>
+            </div>
+        </div> 
+        <div class="row" id="mainRow">
+            
+            </div>
+            </div>
+            <div id="dark" class="col-12 col-sm-12 col-md-12 justify-content-around d-inline-flex rounded flex-wrap">
+                <div class="card borde trasparent" style="width: 12rem;">
+                    <img src="images/fotocontacto1.jpg" class="card-img-top" alt="fotodiseno1">
+                    <div class="card-body bg-black mb-2 borde">
+                        <h5 class="card-title text-light text-center"><strong>Diseño Gráfico</strong></h5>
+                        <p class="card-text text-light text-center">$2000</p>
+                        <a href="#" class="btn text-light ml-1" id="btn1"><strong>Añadir al carrito</strong></a>
+                    </div>
+                </div>
+                <div class="card borde trasparent" style="width: 12rem;">
+                    <img src="images/fotocontacto2.jpg" class="card-img-top" alt="fotodiseno2">
+                    <div class="card-body bg-black mb-2 borde">
+                        <h5 class="card-title text-light text-center"><strong>Animaciones</strong></h5>
+                        <p class="card-text text-light text-center">$2500</p>
+                        <a href="#" class="btn text-light ml-1" id="btn2" ><strong>Añadir al carrito</strong></a>
+                    </div>
+                </div>
+                <div class="card borde trasparent" style="width: 12rem;">
+                    <img src="images/fotocontacto3.jpg" class="card-img-top" alt="fotodiseno3">
+                    <div class="card-body bg-black mb-2 borde">
+                        <h5 class="card-title text-light text-center"><strong>Ediciones</strong></h5>
+                        <p class="card-text text-light text-center">$1500</p>
+                        <a href="#" class="btn text-light ml-1" id="btn3"><strong>Añadir al carrito</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 transparent justify-content-center d-inline-flex mb-5 flex-wrap">
+                <div class="card borde trasparent" style="width: 16rem;">
+                    <div class="card-body bg-white mb-3">
+                        <h3 class="card-title text-center">
+                            Carrito
+                        </h3>
+                        <p class="card-text" id="textoCarrito"></p>
+                        <a class="btn text-light" id="btnTotal"><strong>Ver Total</strong></a>
+                        <a class="btn text-light float-right" id="btnRefrescar">Refrescar</a>
+                    </div>
+                    <div id="newDiv" class="justify-content-center text-light d-inline-flex ">
+                    </div>
+                    <div id="divCompra" class="justify-content-center text-light d-inline-flex">
+                    </div>
+                    <div id="theCard" class="justify-content-center text-light d-inline-flex">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-flex col-12 mb-2 mt-5 text-dark bg-white rounded flex-wrap">
+                <div class="col-5">
+                    <h3 class="text-dark mt-4">Nuevas formas de pago</h6>
+                    <p class="text-dark">Nuestros Servicios pueden ser abonados en U$D mediante Paypal</p>
+                    <p class="text-dark">Te invitamos a conocer la tasa de conversión a moneda argentina:</p>
+                </div>
+                <div class="col-7 justify-content-center align-content-center" id="forBtnDolar">
+                    <img src="images/paypal.png" class="w-25 float-right" id="logoPaypal" alt="logoPayPal">
+                </div>
+                <div id="divForApi" class="col-12 text-light d-flex"></div>
+            </div>
+        </div>
+        </div>
+    </main>
+<!--Scripts-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script> 
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

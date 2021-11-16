@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="form, contacto, servicio">
+    <meta name="description" content="Página destinada al contacto entre el cliente y nosotros">
+    <title>Contacto - Mantis Producciones</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body id="pageContacto">
+<!--Nav-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div >
+            <img src="../images/logo.png" width="150" height="50" class="d-inline-block align-top" id="logo" alt="logo">
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-light" href="../index.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-light text-light" href="contacto.html">Contacto</a>
+                </li>
+          </ul>
+        </div>
+    </nav>
+</header>
+<!--Main-->
+<main class="container">   
+    <h1>Contacto</h1>
+<!--Form Informativo-->
+    <fieldset style="border-radius: 20px;">
+        <legend>
+            "Ya soy cliente"
+        </legend>
+            <p>He contratado servicios anteriormente mediante la plataforma. Tengo nuevas consultas</p>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset style="border-radius: 20px;">
+        <legend>
+            "Quiero contratar un servicio mediante PayPal"
+        </legend>
+            <p>Tomé la decisión de ordenar un servicio mediante PayPal</p>
+            <p>Escribinos para que podamos personalizar la forma de tu pago</p>
+    </fieldset> 
+    <br>
+    <br>
+    <fieldset style="border-radius: 20px;">
+        <legend>
+            "Es la primera vez que entro a esta página"
+        </legend>
+            <p>Me interesa su producto pero tengo dudas al respecto de lo que necesito</p>
+    </fieldset>    
+    <br>
+    <br> 
+<!--Select-->        
+    <select id="pageContacto__select" name="talles">
+        <option value="Ya eres cliente">
+            Ya soy cliente
+        </option>
+        <option  value="Quiero pagar con Paypal">
+            Quiero contratar un servicio mediante Paypal
+        </option>
+        <option  value="Es la primera vez que entro a esta página">
+            Es la primera vez que entro a esta página
+        </option>
+    </select>           
+    <br>
+    <br>
+<!--Label-->
+    <label for="nombre">
+        <h3>
+            Identificación
+        </h3>
+    </label>
+    <div class="container">
+        <p class="lead">
+            Ingrese sus datos para que podamos responderle
+        </p>
+<!--Form/Input-->
+        <form id="datosUsuario">
+            <label for="name">
+                Nombre:
+            </label>
+            <input type="name" class="form-control w-25" id="name" placeholder="Ingrese su nombre" name="name">
+            <label for="email">
+                Email
+            </label>
+            <input type="email" class="form-control w-25" id="email" placeholder="Ingrese su email aquí" name="email">
+            <label for="email">
+            </label>
+            <input type="submit" class="btn text-light mt-2" name="submit"></input>
+            <input type="reset" class="btn text-light mt-2" name="reset"></input>
+            
+        </form>
+        <div id="forDatosUsuario" class="mt-2"></div>
+    </div>
+    <br>
+<!--TextArea-->
+
+    <form id="textArea">
+        <label for="consulta">
+        <h3 class="pageContacto__label__h3">
+            Su consulta
+        </h3>
+        <textarea cols="60" rows="8" placeholder="Escriba su consulta aquí" name=consulta id="consulta"></textarea>
+        </label>
+        
+        <br>           
+<!--Input-->     
+        <input class="btn-dark rounded" type="reset" value="Limpiar lo escrito">
+        <input class="btn-dark rounded" type="submit" value="Enviar consulta">
+        <br>
+        <br>
+        <div id="divMensajeEnviado">Mensaje Enviado: </div>
+    </form>
+    
+    <hr>
+<!--Img-->
+    <img src="../images/fotocontacto4.jpg" id="pageContacto__img" alt="posterDiseñoGraficoSport">
+    <img src="../images/fotocontacto5.jpg" id="pageContacto__img2" alt="posterDiseñoGraficoSport">
+</main>
+<!--Scripts-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script> 
+<script src="../js/contacto.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
